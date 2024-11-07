@@ -4,7 +4,6 @@
 
 ## Required Dependencies
 * QuickShop-Hikari
-* Vault
 
 ## Building
 ```./gradlew build```
