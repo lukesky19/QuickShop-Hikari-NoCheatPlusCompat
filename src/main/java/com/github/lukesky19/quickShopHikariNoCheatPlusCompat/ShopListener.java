@@ -17,8 +17,8 @@
 */
 package com.github.lukesky19.quickShopHikariNoCheatPlusCompat;
 
-import com.ghostchu.quickshop.api.event.ProtectionCheckStatus;
-import com.ghostchu.quickshop.api.event.ShopProtectionCheckEvent;
+import com.ghostchu.quickshop.api.event.general.ProtectionCheckStatus;
+import com.ghostchu.quickshop.api.event.general.ShopProtectionCheckEvent;
 import fr.neatmonster.nocheatplus.hooks.NCPExemptionManager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -26,11 +26,10 @@ import org.bukkit.event.Listener;
 public class ShopListener implements Listener {
     @EventHandler
     public void onShopCreation(ShopProtectionCheckEvent event) {
-        if(event.getStatus() == ProtectionCheckStatus.BEGIN) {
+        if (event.getStatus() == ProtectionCheckStatus.BEGIN) {
             NCPExemptionManager.exemptPermanently(event.getPlayer().getUniqueId());
-        } else if(event.getStatus() == ProtectionCheckStatus.END) {
+        } else if (event.getStatus() == ProtectionCheckStatus.END) {
             NCPExemptionManager.unexempt(event.getPlayer().getUniqueId());
         }
     }
-
 }

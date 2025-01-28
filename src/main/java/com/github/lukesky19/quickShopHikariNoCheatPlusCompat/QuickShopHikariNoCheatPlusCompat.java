@@ -17,7 +17,6 @@
 */
 package com.github.lukesky19.quickShopHikariNoCheatPlusCompat;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class QuickShopHikariNoCheatPlusCompat extends JavaPlugin {
@@ -25,7 +24,7 @@ public final class QuickShopHikariNoCheatPlusCompat extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        Bukkit.getPluginManager().registerEvents(new ShopListener(), this);
+        this.getServer().getPluginManager().registerEvents(new ShopListener(), this);
     }
 
     @Override

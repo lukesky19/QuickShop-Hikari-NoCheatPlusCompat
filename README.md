@@ -3,6 +3,7 @@
 * Fixes compatibility issues between NoCheatPlus and QuickShop-Hikari when creating shops.
 
 ## Required Dependencies
+* NoCheatPlus
 * QuickShop-Hikari
 
 ## Building
