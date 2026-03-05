@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.github.lukesky19"
-version = "1.0.1"
+version = "1.0.1.0"
 
 repositories {
     mavenCentral()
@@ -25,11 +25,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
-    //compileOnly("com.ghostchu:quickshop-bukkit:6.2.0.6")
-    compileOnly("com.ghostchu:quickshop-api:6.2.0.8")
+    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
+    compileOnly("com.ghostchu:quickshop-api:6.2.0.11")
     compileOnly("fr.neatmonster:nocheatplus:3.16.1-SNAPSHOT")
-    //implementation("org.spongepowered:configurate-yaml:4.1.2")
 }
 
 java {
